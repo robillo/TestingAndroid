@@ -35,9 +35,9 @@ public class MyInstrumentedTest {
         onView(withId(R.id.visible_one_activity)).perform(click());
         onView(withId(R.id.one)).check(matches(isDisplayed()));
     }
-
-    @Rule
-    public ActivityTestRule<MainActivity> mainActivityActivityTestRule1 = new ActivityTestRule<>(MainActivity.class);
+//
+//    @Rule
+//    public ActivityTestRule<MainActivity> mainActivityActivityTestRule1 = new ActivityTestRule<>(MainActivity.class);
 
     @Test
     public void clickTwoButton_opensRvTestDataActivity() throws Exception{
