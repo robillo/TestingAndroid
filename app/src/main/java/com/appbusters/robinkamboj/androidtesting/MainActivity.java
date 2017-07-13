@@ -1,5 +1,6 @@
 package com.appbusters.robinkamboj.androidtesting;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.one:{
-
+                startActivity(new Intent(this, OneActivity.class));
                 break;
             }
             case R.id.two:{
