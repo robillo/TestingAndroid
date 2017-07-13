@@ -35,13 +35,17 @@ public class MyInstrumentedTest {
         onView(withId(R.id.visible_one_activity)).perform(click());
         onView(withId(R.id.one)).check(matches(isDisplayed()));
     }
-//
-//    @Rule
-//    public ActivityTestRule<MainActivity> mainActivityActivityTestRule1 = new ActivityTestRule<>(MainActivity.class);
 
     @Test
     public void clickTwoButton_opensRvTestDataActivity() throws Exception{
         onView(withId(R.id.two)).perform(click());
         onView(withId(R.id.recycler)).perform(RecyclerViewActions.scrollToPosition(5)).check(matches(hasDescendant(withText("TEXT 1: 4"))));
+    }
+
+    @Test
+    public void clickThreeButton_openThreeTvActivity() throws Exception{
+        onView(withId(R.id.three)).perform(click());
+        onView(withId(R.id.text_three_activity)).check(matches(isDisplayed()));
+        onView(withId(R.id.text_three_activity)).check(matches(withText(R.string.onresumetext)));
     }
 }

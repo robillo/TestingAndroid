@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case R.id.three:{
-
+                startActivity(new Intent(this, ThreeActivity.class));
                 break;
             }
             case R.id.four:{

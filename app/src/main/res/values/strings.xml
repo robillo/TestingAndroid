@@ -7,4 +7,6 @@
     <string name="five">Five</string>
     <string name="six">Six</string>
     <string name="this_is_one_activity">This Is One Activity</string>
+    <string name="dummy_text">Dummy Text</string>
+    <string name="onresumetext">ON RESUME TEXT, THIS IS!!!</string>
 </resources>
