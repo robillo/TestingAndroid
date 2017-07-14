@@ -1,17 +1,18 @@
 package com.appbusters.robinkamboj.androidtesting;
 
+import android.app.Activity;
+import android.support.test.espresso.Espresso;
 import android.support.test.espresso.ViewAction;
-import android.support.test.espresso.ViewAssertion;
-import android.support.test.espresso.action.TypeTextAction;
 import android.support.test.espresso.contrib.RecyclerViewActions;
+import android.support.test.espresso.contrib.CountingIdlingResource;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
-import android.support.v7.widget.RecyclerView;
 
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static android.support.test.espresso.Espresso.getIdlingResources;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.action.ViewActions.closeSoftKeyboard;
@@ -43,9 +44,26 @@ public class MyInstrumentedTest {
     }
 
     @Test
-    public void clickThreeButton_openThreeTvActivity() throws Exception{
+    public void clickThreeButton_openThreeAsynctaskActivity() throws Exception{
         onView(withId(R.id.three)).perform(click());
         onView(withId(R.id.text_three_activity)).check(matches(isDisplayed()));
         onView(withId(R.id.text_three_activity)).check(matches(withText(R.string.onresumetext)));
     }
+
+    @Test
+    public void clickFourButton_openFourThreadActivity() throws Exception{
+        onView(withId(R.id.four)).perform(click());
+        onView(withId(R.id.text_four_activity)).check(matches(isDisplayed()));
+    }
+
+////    @Rule
+//////    public ActivityTestRule<FourActivity> fourActivityActivityTestRule = new ActivityTestRule<>(FourActivity.class);
+//
+//    @Test
+//    public void  clickThreadActivityButton_shouldChangeText() throws Exception{
+////        Espresso.registerIdlingResources();
+//        onView(withId(R.id.four)).perform(click());
+//        onView(withId(R.id.text_four_activity)).check(matches(isDisplayed()));
+//        onView(withId(R.id.text_four_activity)).check(matches(withText(R.string.onresumetext)));
+//    }
 }
