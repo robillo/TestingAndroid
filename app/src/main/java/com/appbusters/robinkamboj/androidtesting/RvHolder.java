@@ -7,6 +7,7 @@ import android.widget.TextView;
 public class RvHolder extends RecyclerView.ViewHolder{
 
     public TextView text1, text2;
+    //RV HOLDER
 
     public RvHolder(View itemView) {
         super(itemView);
