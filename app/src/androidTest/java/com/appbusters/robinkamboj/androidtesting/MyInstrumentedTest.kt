@@ -28,6 +28,13 @@ import android.support.v7.widget.RecyclerView
 @RunWith(AndroidJUnit4::class)
 class MyInstrumentedTest {
 
+    companion object {
+
+        private const val TEXT_TO_TYPE = "ROBIN"
+        private const val RECYCLER_VIEW_TEXT_TO_MATCH = "TEXT 1: 4"
+        private const val RECYCLER_POSITION_TO_SCROLL_TO = 5
+    }
+
     @get:Rule
     var mainActivityActivityTestRule = ActivityTestRule(MainActivity::class.java)
 
@@ -105,12 +112,5 @@ class MyInstrumentedTest {
 
         onView(withId(R.id.text_four_activity))
                 .check(matches(withText(R.string.thread_resume_text)))
-    }
-
-    companion object {
-
-        private const val TEXT_TO_TYPE = "ROBIN"
-        private const val RECYCLER_VIEW_TEXT_TO_MATCH = "TEXT 1: 4"
-        private const val RECYCLER_POSITION_TO_SCROLL_TO = 5
     }
 }

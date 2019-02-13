@@ -12,6 +12,15 @@ import kotlinx.android.synthetic.main.activity_text_test.*
 
 class TextTestActivity : AppCompatActivity() {
 
+    companion object {
+
+        private const val TEXT_TO_TYPE = "ROBIN"
+
+        fun newIntent(context: Context): Intent {
+            return Intent(context, TextTestActivity::class.java)
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_text_test)
@@ -23,16 +32,11 @@ class TextTestActivity : AppCompatActivity() {
                 startActivity(MainActivity.newIntent(this))
             }
             R.id.verify_valid_text -> {
-                verified_text.visibility = View.VISIBLE
-                verified_text.setText(R.string.text_verified)
+                if(type_text.text.toString() == TEXT_TO_TYPE) {
+                    verified_text.visibility = View.VISIBLE
+                    verified_text.setText(R.string.text_verified)
+                }
             }
-        }
-    }
-
-    companion object {
-
-        fun newIntent(context: Context): Intent {
-            return Intent(context, TextTestActivity::class.java)
         }
     }
 }

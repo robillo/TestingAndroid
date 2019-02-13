@@ -4,42 +4,49 @@
     android:layout_height="wrap_content"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_margin="5sp"
-    app:cardElevation="3sp"
-    android:paddingTop="20sp"
-    android:paddingBottom="20sp"
-    android:paddingLeft="10sp"
-    android:paddingRight="10sp">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="0sp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="15sp"
-            android:gravity="start"
-            android:padding="10sp"
-            android:textColor="@color/colorPrimaryDark"
-            android:id="@+id/textLeft"
-            android:fontFamily="serif-monospace"
-            tools:text="Left Text"/>
+            android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="0sp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textSize="15sp"
-            android:gravity="end"
-            android:padding="10sp"
-            android:textColor="@color/colorPrimaryDark"
-            android:id="@+id/textRight"
-            android:fontFamily="serif-monospace"
-            tools:text="Right Text"/>
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:padding="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/textLeft"
+                android:fontFamily="serif-monospace"
+                tools:text="Left Text"/>
+
+            <TextView
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:gravity="end"
+                android:padding="10sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:id="@+id/textRight"
+                android:fontFamily="serif-monospace"
+                tools:text="Right Text"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/colorPrimary"
+            tools:ignore="ContentDescription,SmallSp" />
 
     </LinearLayout>
 
