@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.appbusters.robinkamboj.androidtesting.MainActivity">
+    tools:context="com.appbusters.robinkamboj.androidtesting.main_screen.MainActivity">
 
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
@@ -34,52 +34,52 @@
             android:layout_width="match_parent"
             android:layout_height="0sp"
             android:layout_weight="1"
-            android:text="@string/one"
+            android:text="@string/one_text_test"
             android:textSize="18sp"
             android:textColor="@color/colorPrimaryDark"
-            android:fontFamily="sans-serif-smallcaps"
+            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:background="?android:attr/selectableItemBackground"
-            android:id="@+id/one"
+            android:id="@+id/text_test_button"
             android:onClick="onClick"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="0sp"
             android:layout_weight="1"
-            android:text="@string/two"
+            android:text="@string/two_recycler_test"
             android:textSize="18sp"
             android:textColor="@color/colorPrimaryDark"
-            android:fontFamily="sans-serif-smallcaps"
+            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:background="?android:attr/selectableItemBackground"
-            android:id="@+id/two"
+            android:id="@+id/recycler_test_button"
             android:onClick="onClick"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="0sp"
             android:layout_weight="1"
-            android:text="@string/three"
+            android:text="@string/three_async_task_test"
             android:textSize="18sp"
             android:textColor="@color/colorPrimaryDark"
-            android:fontFamily="sans-serif-smallcaps"
+            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:background="?android:attr/selectableItemBackground"
-            android:id="@+id/three"
+            android:id="@+id/async_task_test_button"
             android:onClick="onClick"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="0sp"
             android:layout_weight="1"
-            android:text="@string/four"
+            android:text="@string/four_thread_test"
             android:textSize="18sp"
             android:textColor="@color/colorPrimaryDark"
-            android:fontFamily="sans-serif-smallcaps"
+            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:background="?android:attr/selectableItemBackground"
-            android:id="@+id/four"
+            android:id="@+id/thread_test_button"
             android:onClick="onClick"/>
 
         <Button
@@ -89,7 +89,7 @@
             android:text="@string/five"
             android:textSize="18sp"
             android:textColor="@color/colorPrimaryDark"
-            android:fontFamily="sans-serif-smallcaps"
+            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:background="?android:attr/selectableItemBackground"
             android:id="@+id/five"
@@ -102,7 +102,7 @@
             android:text="@string/six"
             android:textSize="18sp"
             android:textColor="@color/colorPrimaryDark"
-            android:fontFamily="sans-serif-smallcaps"
+            android:fontFamily="serif-monospace"
             android:textStyle="bold"
             android:background="?android:attr/selectableItemBackground"
             android:id="@+id/six"

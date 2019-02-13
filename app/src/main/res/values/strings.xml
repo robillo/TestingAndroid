@@ -1,12 +1,14 @@
 <resources>
     <string name="app_name">Android Testing</string>
-    <string name="one">One</string>
-    <string name="two">Two</string>
-    <string name="three">Three</string>
-    <string name="four">Four</string>
+    <string name="one_text_test">Test Text Change</string>
+    <string name="two_recycler_test">Check RecyclerView Item</string>
+    <string name="three_async_task_test">Check AsyncTask Result</string>
+    <string name="four_thread_test">Check Thread Result</string>
     <string name="five">Five</string>
     <string name="six">Six</string>
-    <string name="this_is_one_activity">This Is One Activity</string>
+    <string name="go_back_to_main">Go Back To Home Screen</string>
     <string name="dummy_text">Dummy Text</string>
     <string name="onresumetext">ON RESUME TEXT, THIS IS!!!</string>
+    <string name="click_to_verify_text">Click To Verify Text</string>
+    <string name="text_verified">Text Verified</string>
 </resources>

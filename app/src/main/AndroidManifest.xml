@@ -9,17 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".main_screen.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OneActivity" />
-        <activity android:name=".TwoActivity" />
-        <activity android:name=".ThreeActivity" />
-        <activity android:name=".FourActivity"></activity>
+        <activity android:name=".main_screen.text_test.TextTestActivity"/>
+        <activity android:name=".main_screen.recycler_test.RecyclerTestActivity"/>
+        <activity android:name=".main_screen.async_task_test.AsyncTaskTestActivity"/>
+        <activity android:name=".main_screen.thread_test.ThreadTestActivity"/>
     </application>
 
 </manifest>

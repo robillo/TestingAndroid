@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appbusters.robinkamboj.androidtesting.main_screen.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?android:actionBarSize"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="serif-monospace"
+            android:background="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/verified_text"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:id="@+id/type_text"
+            android:inputType="text"
+            tools:ignore="Autofill,LabelFor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/colorPrimaryDark"
+            tools:ignore="ContentDescription,SmallSp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/click_to_verify_text"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:id="@+id/verify_valid_text"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="onClick"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/colorPrimaryDark"
+            tools:ignore="ContentDescription,SmallSp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/go_back_to_main"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:id="@+id/main_activity_navigate_button"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
