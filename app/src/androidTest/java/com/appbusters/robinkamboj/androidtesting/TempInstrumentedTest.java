@@ -27,6 +27,6 @@ public class TempInstrumentedTest {
         Espresso.registerIdlingResources();
         onView(withId(R.id.thread_test_button)).perform(click());
         onView(withId(R.id.text_four_activity)).check(matches(isDisplayed()));
-        onView(withId(R.id.text_four_activity)).check(matches(withText(R.string.onresumetext)));
+        onView(withId(R.id.text_four_activity)).check(matches(withText(R.string.thread_resume_text)));
     }
 }

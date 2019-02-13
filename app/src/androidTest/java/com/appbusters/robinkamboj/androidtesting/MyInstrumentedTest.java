@@ -29,6 +29,7 @@ public class MyInstrumentedTest {
 
     private static final String TEXT_TO_TYPE = "ROBIN";
     private static final String RECYCLER_VIEW_TEXT_TO_MATCH = "TEXT 1: 4";
+    private static final int RECYCLER_POSITION_TO_SCROLL_TO = 5;
 
     @Rule
     public ActivityTestRule<MainActivity> mainActivityActivityTestRule = new ActivityTestRule<>(MainActivity.class);
@@ -67,7 +68,7 @@ public class MyInstrumentedTest {
                 .perform(click());
 
         onView(withId(R.id.recycler))
-                .perform(RecyclerViewActions.scrollToPosition(5))
+                .perform(RecyclerViewActions.scrollToPosition(RECYCLER_POSITION_TO_SCROLL_TO))
                 .check(matches(hasDescendant(withText(RECYCLER_VIEW_TEXT_TO_MATCH))));
     }
 
@@ -81,7 +82,7 @@ public class MyInstrumentedTest {
                 .check(matches(isDisplayed()));
 
         onView(withId(R.id.text_three_activity))
-                .check(matches(withText(R.string.onresumetext)));
+                .check(matches(withText(R.string.thread_resume_text)));
     }
 
     @Test
@@ -97,7 +98,7 @@ public class MyInstrumentedTest {
     @Test
     public void  clickThreadActivityButton_shouldChangeText() {
 
-        Espresso.registerIdlingResources(ThreadTestActivity.getIdlingResourceInTest());
+        Espresso.registerIdlingResources(ThreadTestActivity.Companion.getIdlingResourceInTest());
 
         onView(withId(R.id.thread_test_button))
                 .perform(click());
@@ -106,6 +107,6 @@ public class MyInstrumentedTest {
                 .check(matches(isDisplayed()));
 
         onView(withId(R.id.text_four_activity))
-                .check(matches(withText(R.string.onresumetext)));
+                .check(matches(withText(R.string.thread_resume_text)));
     }
 }

@@ -8,7 +8,7 @@
     <string name="six">Six</string>
     <string name="go_back_to_main">Go Back To Home Screen</string>
     <string name="dummy_text">Dummy Text</string>
-    <string name="onresumetext">ON RESUME TEXT, THIS IS!!!</string>
+    <string name="thread_resume_text">This is the new text!</string>
     <string name="click_to_verify_text">Click To Verify Text</string>
     <string name="text_verified">Text Verified</string>
 </resources>
